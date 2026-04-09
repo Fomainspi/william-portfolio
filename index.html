@@ -1,129 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>William Foma | DevOps Engineer</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>William Foma | DevOps Engineer</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-<!-- HERO SECTION -->
-<header class="hero">
-    <div class="container">
-        <img src="profile.jpg" alt="Profile Picture" class="profile-img">
-        <h1>William Foma</h1>
-        <h2>DevOps & DevSecOps Engineer</h2>
-        <p>Designing secure, scalable and automated cloud infrastructures</p>
-        <div class="buttons">
-            <a href="#projects">View Projects</a>
-            <a href="#contact">Contact Me</a>
-        </div>
+<!-- NAVBAR -->
+<nav class="navbar">
+  <div class="logo">WF</div>
+  <ul>
+    <li><a href="#about">About</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-content">
+    <img src="profile.jpg" class="profile">
+    <h1>William Foma</h1>
+    <h2>DevOps & DevSecOps Engineer</h2>
+    <p>Building secure, scalable and automated cloud systems</p>
+
+    <div class="cta">
+      <a href="#projects" class="btn">View Projects</a>
+      <a href="#contact" class="btn-outline">Contact</a>
     </div>
-</header>
+  </div>
+</section>
 
 <!-- ABOUT -->
-<section class="section">
-    <h2>About Me</h2>
-    <p>
-        I am a DevOps & DevSecOps Engineer with a strong background in leadership and problem-solving.
-        My journey from Biology to technology reflects resilience and adaptability.
-        I focus on building secure, scalable and automated systems that deliver real impact.
-    </p>
+<section id="about" class="section">
+  <h2>About Me</h2>
+  <p>
+    DevOps & DevSecOps Engineer with a strong background in leadership and problem-solving.
+    I design secure, scalable infrastructures and automate modern cloud systems.
+  </p>
 </section>
 
 <!-- SKILLS -->
-<section class="section dark">
-    <h2>Technical Skills</h2>
-    <div class="skills">
-        <div>
-            <h3>DevOps</h3>
-            <p>Docker, Kubernetes, Jenkins, Git, Ansible</p>
-        </div>
-        <div>
-            <h3>Cloud</h3>
-            <p>AWS (EC2, S3, IAM, CloudFront)</p>
-        </div>
-        <div>
-            <h3>Infrastructure</h3>
-            <p>Terraform</p>
-        </div>
-        <div>
-            <h3>DevSecOps</h3>
-            <p>Trivy, SonarQube, SAST, Secure CI/CD</p>
-        </div>
+<section id="skills" class="section">
+  <h2>Tech Stack</h2>
+  <div class="grid">
+
+    <div class="card">
+      <h3>DevOps</h3>
+      <p>Docker, Kubernetes, Jenkins, Git, Ansible</p>
     </div>
+
+    <div class="card">
+      <h3>Cloud</h3>
+      <p>AWS (EC2, S3, IAM, CloudFront)</p>
+    </div>
+
+    <div class="card">
+      <h3>IaC</h3>
+      <p>Terraform</p>
+    </div>
+
+    <div class="card">
+      <h3>DevSecOps</h3>
+      <p>Trivy, SonarQube, Secure CI/CD</p>
+    </div>
+
+  </div>
 </section>
 
 <!-- PROJECTS -->
 <section id="projects" class="section">
-    <h2>Projects</h2>
+  <h2>Projects</h2>
+
+  <div class="grid">
 
     <div class="card">
-        <h3>CI/CD Pipeline (DevSecOps)</h3>
-        <p>End-to-end pipeline using Jenkins, Docker, Kubernetes and AWS with integrated security scanning.</p>
+      <h3>CI/CD Pipeline</h3>
+      <p>End-to-end pipeline with Jenkins, Docker, Kubernetes & AWS.</p>
     </div>
 
     <div class="card">
-        <h3>Dockerized Application</h3>
-        <p>Multi-container application with Docker Compose and persistent volumes.</p>
+      <h3>Docker App</h3>
+      <p>Multi-container app with Docker Compose and volumes.</p>
     </div>
 
     <div class="card">
-        <h3>Terraform Infrastructure</h3>
-        <p>Provisioned scalable AWS infrastructure using Infrastructure as Code.</p>
+      <h3>Terraform Infra</h3>
+      <p>AWS infrastructure provisioning with IaC.</p>
     </div>
 
-</section>
-
-<!-- WORKFLOW -->
-<section class="section dark">
-    <h2>DevOps Workflow</h2>
-    <p class="center">
-        Code → Build → Test → Scan → Secure → Deploy → Monitor
-    </p>
-</section>
-
-<!-- LEARNING -->
-<section class="section">
-    <h2>Certifications & Learning</h2>
-    <p>
-        DevOps Training, Linux, Terraform, Kubernetes, NLP Certification.
-    </p>
-    <p class="note">
-        Although I have completed several trainings, I consider my learning journey as ongoing.
-        I continuously improve my skills to stay updated with modern technologies.
-    </p>
-</section>
-
-<!-- EXPERIENCE -->
-<section class="section dark">
-    <h2>Professional Experience</h2>
-    <p>
-        Data Analyst & Team Lead with experience working with international companies.
-        Strong in leadership, problem-solving, and data-driven decision-making.
-    </p>
-</section>
-
-<!-- VISION -->
-<section class="section">
-    <h2>Vision & Mission</h2>
-    <p>
-        My goal is to build impactful solutions and contribute to society by combining technology
-        and innovation. I aspire to create systems that improve lives and support communities.
-    </p>
+  </div>
 </section>
 
 <!-- CONTACT -->
-<section id="contact" class="section dark">
-    <h2>Contact</h2>
-    <p>Email: your@email.com</p>
-    <p>GitHub: github.com/yourprofile</p>
-    <p>LinkedIn: linkedin.com/in/yourprofile</p>
+<section id="contact" class="section">
+  <h2>Contact</h2>
+  <p>Email: your@email.com</p>
+  <p>GitHub: github.com/yourprofile</p>
+  <p>LinkedIn: linkedin.com/in/yourprofile</p>
 </section>
 
 <footer>
-    <p>© 2026 William Foma | DevOps Engineer</p>
+  <p>© 2026 William Foma</p>
 </footer>
 
 </body>
